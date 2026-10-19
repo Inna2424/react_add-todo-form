@@ -51,7 +51,9 @@ export const PostForm: React.FC<Props> = ({ onSubmit }) => {
   return (
     <form action="/api/todos" method="POST" onSubmit={handeSubmit}>
       <div className="field">
+        <label htmlFor="title-input">Title:</label>
         <input
+          id="title"
           type="text"
           data-cy="titleInput"
           placeholder="Enter a title"
@@ -62,7 +64,9 @@ export const PostForm: React.FC<Props> = ({ onSubmit }) => {
       </div>
 
       <div className="field">
+        <label htmlFor="user-input">Title:</label>
         <select
+          id="user-input"
           data-cy="userSelect"
           value={userId}
           onChange={handeUserIdChange}
